@@ -13,7 +13,7 @@ const YoutubeCard = (props: { videoId: string }) => {
     <Card w={`100%`} overflow={`hidden`} position={`relative`}>
       <CardBody>
         <YouTube
-          style={{ borderRadius: "50%" }}
+          style={{ objectFit: 'cover',objectPosition: 'center' }}
           videoId={videoId}
           opts={opts}
         />
