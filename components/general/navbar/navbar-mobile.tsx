@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { NAV_ITEMS, NavItem } from "./data";
+import Link from "next/link";
 
 export default function NavbarMobile() {
   return (
@@ -69,9 +70,9 @@ const NavbarMobileItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <Box as="a" key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Box>
+              <Link href={child.href ?? "#"} key={child.label}>
+                <Box py={2}>{child.label}</Box>
+              </Link>
             ))}
         </Stack>
       </Collapse>
