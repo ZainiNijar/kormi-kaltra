@@ -23,7 +23,7 @@ const BerandaDesktop = (props: Props) => {
         w={"full"}
         h={"100vh"}
         position={`relative`}
-        backgroundImage={`url(https://source.unsplash.com/random/temple)`}
+        backgroundImage={`url(/images/main.jpeg)`}
         filter={`brightness(120%)`}
         backgroundSize={"cover"}
         backgroundPosition={"center center"}
