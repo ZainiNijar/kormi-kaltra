@@ -21,7 +21,7 @@ const BerandaMobile = (props: BerandaMobileProps) => {
     <>
       <VStack
         w={"full"}
-        h={"100vh"}
+        h={"70vh"}
         position={`relative`}
         backgroundImage={`url(/images/main.jpeg)`}
         filter={`brightness(120%)`}
@@ -34,7 +34,7 @@ const BerandaMobile = (props: BerandaMobileProps) => {
           bg={`linear-gradient(177deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%)`}
         >
           <VStack
-            mt={`30px`}
+            pt={`150px`}
             justifyContent={`center`}
             paddingBottom={`100px`}
             w={"full"}
@@ -48,13 +48,13 @@ const BerandaMobile = (props: BerandaMobileProps) => {
                 fontWeight={700}
                 lineHeight={1.2}
                 textAlign={`center`}
-                fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+                fontSize={`2xl`}
               >
                 <Text color={`teal.500`}>
                   KOMITE OLAHRAGA REKREASI MASYARAKAT INDONESIA (KORMI)
                   <br /> Provinsi Kaltra
                 </Text>
-                <Text fontSize="lg" mt={4} fontWeight={`light`}>
+                <Text fontSize="xs" mt={4} fontWeight={`light`}>
                   Daftar Akun Untuk Dapat Akses Daftar Inorga / Pegiat
                 </Text>
               </Box>
@@ -79,7 +79,7 @@ const BerandaMobile = (props: BerandaMobileProps) => {
           <Waves />
         </Box>
       </VStack>
-      <Container py={`120px`} maxW={`container.xl`} mx={`auto`}>
+      <Container pb={`120px`} pt={`60px`} maxW={`container.xl`} mx={`auto`}>
         <VStack w={"full"} minH={"50vh"}>
           <Text
             color={`teal.400`}

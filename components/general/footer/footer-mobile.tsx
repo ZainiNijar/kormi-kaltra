@@ -54,7 +54,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      bg={`teal.300`}
       rounded={"full"}
       w={8}
       h={8}
@@ -66,7 +66,7 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        bg: "teal.400",
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
